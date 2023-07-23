@@ -6,18 +6,6 @@ use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\InteractionController;
 
 
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', function () {
     return view('home');
 });
@@ -50,4 +38,8 @@ Route::post('/set/add', [PhotoController::class, 'addSet']);
 Route::get('/getsets', 'PhotoController@getsets');
 Route::get('/getinfo', 'User@getUserInfo');
 
-Route::post('/create_comment', 'InteractionController@comment');
+Route::post('/create_comment', [InteractionController::class, 'comment']);
+
+Route::post('/like_photo', [InteractionController::class, 'like']);
+
+Route::get('/get_comments', [InteractionController::class, 'get_comments']);
