@@ -68,7 +68,7 @@ body {
     font-size: 18px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 550px) {
     .card {
         max-width: calc(85%);
     }
@@ -288,7 +288,7 @@ header {
     flex-direction: column;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 550px) {
     .card {
         max-width: calc(85% / 2);
     }
@@ -350,6 +350,12 @@ header {
     padding-top: 8px;
     padding-bottom: 8px;
     box-shadow: 8px 8px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 550px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, 40%);
+    }
 }
 
 .grid img{
@@ -522,19 +528,6 @@ footer img {
     justify-content: space-around;
 }
 
-#prev,
-#next {
-    position: fixed;
-    top: 50%;
-}
-
-#prev {
-    left: 2%;
-}
-
-#next {
-    left: 96%;
-}
 
 .img_selected {
     border: 1px solid red;
@@ -604,7 +597,7 @@ button:hover {
     margin-top: 10px;
 }
 
-/*comments and rating*/
+/*comments*/
 
 
 .comments-container {
@@ -677,4 +670,11 @@ button:hover {
 }
 #like-button:active {
     background: white;
+}
+
+#selectedimg img{
+    width: 75%;
+    border-radius: 6px;
+    margin-top: 25px;
+    box-shadow: 8px 8px 5px 2px rgba(0, 0, 0, 0.2);
 }

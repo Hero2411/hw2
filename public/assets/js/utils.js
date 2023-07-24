@@ -34,19 +34,9 @@ function dishammenu() {
 }
 
 function toggleUpButton() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    if (document.body.scrollTop > 55 || document.documentElement.scrollTop > 55) {
         UPButton.style.display = "block";
     } else {
         UPButton.style.display = "none";
-    }
-}
-
-function toggleArrow() {
-    if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
-        next.style.display = "block";
-        prev.style.display = "block";
-    } else {
-        next.style.display = "none";
-        prev.style.display = "none";
     }
 }

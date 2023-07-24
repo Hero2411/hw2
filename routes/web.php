@@ -17,22 +17,22 @@ Route::post('/logout', [UserControl::class, 'logout']);
 Route::view('/loginpage', 'loginpage');
 
 Route::get('/set', function(){
-    return view('set'); // Your Blade template name
+    return view('set');
 });
 Route::get('/account', function(){
-    return view('account'); // Your Blade template name
+    return view('account');
 });
 Route::get('/contacts', function(){
-    return view('contacts'); // Your Blade template name
+    return view('contacts');
 });
 
 Route::get('/setpage/{set_id}', function($set_id){
-    return view("setpage")->with("set_id", $set_id); // Your Blade template name
+    return view("setpage")->with("set_id", $set_id);
 });
 
 
 Route::get('/adminpost', function(){
-    return view('adminpost'); // Your Blade template name
+    return view('adminpost');
 });
 Route::post('/set/add', [PhotoController::class, 'addSet']);
 Route::get('/getsets', 'PhotoController@getsets');

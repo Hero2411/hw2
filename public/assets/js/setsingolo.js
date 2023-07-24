@@ -8,16 +8,6 @@ like.addEventListener("click", setLike);
 
 const imgs = document.querySelectorAll(".grid img");
 
-window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 425) {
-        prev.style.display = "none";
-        next.style.display = "none";
-    } else {
-        prev.style.display = "block";
-        next.style.display = "block";
-    }
-});
-
 async function setLike() {
     var token = document.getElementById("token").value;
     var img_id = document.getElementById("img_id").value;
@@ -77,6 +67,8 @@ function selectImage(event) {
     document.getElementById("img_id").value = id;
     img.classList.add("img_selected");
     load_comments(id);
+    var src = img.src;
+    document.getElementById("selectedimg").innerHTML = `<img src="${src}" alt="Selected Image">`;
 }
 
 function setup() {
@@ -87,6 +79,7 @@ function setup() {
     imgs.forEach((img) => {
         img.addEventListener("click", selectImage);
     });
+    document.getElementById("selectedimg").innerHTML = `<img src="${imgs[0].src}" alt="Selected Image">`;
 }
 
 async function load_comments(id) {
