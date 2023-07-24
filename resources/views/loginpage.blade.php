@@ -28,15 +28,21 @@
         <p>Compila i form sotto per registrarti se sei un nuovo utente o loggare se sei già registarto!</p>
     </div>
 
+    <div id = "avvisi">
+        <span id = "userreq">L'username deve essere di una dimensione tra 4 e 60 caratteri</span>
+        <span id = "emailreq">La email deve essere in un formato valido</span>
+        <span id = "passwordreq">La password deve contenere almeno 8 caratteri, di cui almeno 3 minuscoli, 2 maiuscoli, 2 numeri e 1 carattere speciale</span>
+    </div>
+
 
     <div id="logsection">
         <div id="registration">
             <form action="/register" method="POST">
                 @csrf
                 <h1>Register</h1>
-                <input type="text" name="name" placeholder="name"><br>
-                <input type="text" name="email" placeholder="email"><br>
-                <input type="password" name="password" placeholder="password"><br>
+                <input type="text" name="name" placeholder="name">
+                <input type="text" name="email" placeholder="email">
+                <input type="password" name="password" placeholder="password">
                 <input type="password" placeholder="Confirm Password" name="password_confirmation" required><br>
                 <span><button>Register</button></span>
 
@@ -56,6 +62,7 @@
 
     @include('footer')
     <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/log.js"></script>
 
 </body>
 

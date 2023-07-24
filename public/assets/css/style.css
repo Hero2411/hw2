@@ -8,6 +8,7 @@
 #login {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 25vw;
     background-color: rgba(247, 243, 225, 0.8);
     border: solid 5px #858e92;
@@ -21,7 +22,23 @@
 #registration h1 {
     text-align: center;
 }
+
 #login h1 {
+    text-align: center;
+}
+
+#userreq{
+    display: none;
+    text-align: center;
+}
+
+#emailreq{
+    display: none;
+    text-align: center;
+}
+
+#passwordreq{
+    display: none;
     text-align: center;
 }
 
