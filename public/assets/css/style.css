@@ -30,11 +30,12 @@ body {
     font-family: "Montserrat";
     margin-right: 32px;
     margin-left: 25px;
+    min-width: 400px;
 }
 
 .titoli {
     display: block;
-    width: 45%;
+    width: 55%;
     margin: 0 auto;
     padding: 0 10px;
     padding-bottom: 10px;
@@ -44,6 +45,16 @@ body {
 
 .titoli h1 {
     text-align: center;
+}
+
+.titoli p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        max-width: calc(85%);
+    }
 }
 
 #upbtn {
@@ -193,25 +204,20 @@ header {
     position: relative;
     top: 250px;
     width: 70%;
+    min-width: 250px;
     margin: 0 auto;
-}
-
-#introduction p {
-    text-align: center;
-    font-size: 24px;
-    color: #f7f3e1;
-}
-
-#introduction p {
-    padding: 30px 150px;
     background-color: rgba(25, 21, 25, 0.65);
     border-radius: 6px;
-    transition: all 0.3s;
 }
 
-#introduction p:hover {
-    background-color: rgba(25, 21, 25, 1);
+
+#random_quote{
+    padding: 20;
+    text-align: center;
+    color: #f7f3e1;
+    font-weight: lighter;
 }
+
 
 #socialbutton {
     display: block;
@@ -271,11 +277,7 @@ header {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .card {
-        max-width: 85%;
-    }
-}
+
 
 .card img {
     display: block;
@@ -444,7 +446,8 @@ footer img {
     padding-top: 35px;
     margin-bottom: 100px;
     width: 90%;
-    height: 700px;
+    height: auto;
+    min-width: 400px;
     border-radius: 6px;
     box-shadow: 8px 8px 5px 2px rgba(0, 0, 0, 0.2);
 }
@@ -458,21 +461,40 @@ footer img {
 
 #setpageintrotext {
     width: 90%;
-    margin: -10px auto;
-}
-
-#setpageintrotext p {
-    margin-top: -10px;
-    color: #f0efea !important;
+    margin: 0 auto;
     text-align: center;
-    justify-content: center;
-}
-
-#setpageintrotext h1 {
+     color: #f0efea !important;
+  }
+  
+  #setpageintrotext h1, #setpageintrotext p {
+    max-width: 100%;
+    margin: 0 auto;
     color: #f0efea !important;
-    text-align: center;
+  }
+
+  @media screen and (max-width: 550px) {
+    #titleimg {
+        width: 85%;
+        height: auto;
+        margin: 10px auto;
+        margin-bottom: 50px;
+        box-shadow: none;
+    }
+
+    #titleimg img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    #setpageintrotext {
+        width: 85%;
+        font-size: 16px;
+    }
 }
 
+
+  
 /*Setcontainer*/
 
 #containerset {

@@ -17,7 +17,7 @@
 
     <header>
         <div id="introduction">
-            <p><span id="random_quote">AlterPhotograpy</span></p>
+            <h2 id="random_quote"></h2>
         </div>
 
 

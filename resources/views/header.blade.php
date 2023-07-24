@@ -7,7 +7,6 @@
     <div id="linkmenu">
         <a href="/"> Home </a>
         <a href="/set"> Set </a>
-        <a href="/contacts"> Contatti </a>
 
 
         @auth
