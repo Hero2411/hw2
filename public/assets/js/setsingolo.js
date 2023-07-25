@@ -6,6 +6,11 @@ const like = document.getElementById("like-button");
 sendcomment.addEventListener("click", sendComment);
 like.addEventListener("click", setLike);
 
+comment_input.addEventListener("keydown", function(event) {
+    if(event.keyCode == 13) {
+        sendComment()}
+});
+
 const imgs = document.querySelectorAll(".grid img");
 
 async function setLike() {
@@ -56,6 +61,7 @@ async function sendComment() {
     }
     load_comments(img_id);
     alert("DONE");
+    comment_input.value = "";
 }
 
 function selectImage(event) {
@@ -67,8 +73,7 @@ function selectImage(event) {
     document.getElementById("img_id").value = id;
     img.classList.add("img_selected");
     load_comments(id);
-    var src = img.src;
-    document.getElementById("selectedimg").innerHTML = `<img src="${src}" alt="Selected Image">`;
+    document.getElementById("selectedimg").innerHTML = `<img src="${img.src}" alt="Selected Image">`;
 }
 
 function setup() {

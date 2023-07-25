@@ -1,3 +1,4 @@
+
 #logsection {
     display: flex;
     justify-content: center;
@@ -27,20 +28,6 @@
     text-align: center;
 }
 
-#userreq{
-    display: none;
-    text-align: center;
-}
-
-#emailreq{
-    display: none;
-    text-align: center;
-}
-
-#passwordreq{
-    display: none;
-    text-align: center;
-}
 
 body {
     background-color: #f7f3e1;
@@ -48,6 +35,7 @@ body {
     margin-right: 32px;
     margin-left: 25px;
     min-width: 400px;
+    overflow-x: hidden;
 }
 
 .titoli {
@@ -199,8 +187,14 @@ nav {
     text-align: center !important;
 }
 
+#avviso {
+    text-align: center;
+    position:absolute;
+    width: 100%;
+}
+
 #logsection {
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
 .send {
@@ -613,6 +607,7 @@ button:hover {
     border-radius: 6px;
     box-shadow: 8px 8px 5px 2px rgba(0, 0, 0, 0.2);
     background-color: #dad5bb;
+    line-break: anywhere;
 }
 
 .comment-header {

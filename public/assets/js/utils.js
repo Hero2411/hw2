@@ -4,14 +4,11 @@ const MenuCloseButton = document.querySelector('#menux');
 const Nav = document.querySelector('nav');
 const log_actionBtn = document.getElementById("log_action");
 const account = document.getElementById("account");
-const next = document.getElementById("next");
-const prev = document.getElementById("prev");
 
 UPButton.addEventListener('click', topFunction);
 MenuButton.addEventListener('click', hammenu);
 MenuCloseButton.addEventListener('click', dishammenu);
 window.addEventListener('scroll', toggleUpButton);
-window.addEventListener('scroll', toggleArrow);
 
 function topFunction() {
     document.body.scrollTop = 0;

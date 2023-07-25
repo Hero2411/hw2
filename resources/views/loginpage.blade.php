@@ -12,25 +12,14 @@
 
     @include('header')
 
-    <script>
-        @if ($errors->any())
-            @foreach ($errors->all() as $error)
-                alert("{{ $error }}");
-            @endforeach
-        @endif
-    </script>
-
-
     <div class="titoli">
         <h1>Benvenuto su AlterPhotograpy</h1>
         <p>Compila i form sotto per registrarti se sei un nuovo utente o loggare se sei già registarto!</p>
     </div>
 
-    <div id = "avvisi">
-        <span id = "userreq">L'username deve essere di una dimensione tra 4 e 60 caratteri</span>
-        <span id = "emailreq">La email deve essere in un formato valido</span>
-        <span id = "passwordreq">La password deve contenere almeno 8 caratteri, di cui almeno 3 minuscoli, 2 maiuscoli, 2 numeri e 1 carattere speciale</span>
-    </div>
+    <p id = "avviso">
+        
+    </p>
 
 
     <div id="logsection">
@@ -57,6 +46,13 @@
         </div>
     </div>
 
+    <script>
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                alert("{{ $error }}");
+            @endforeach
+        @endif
+    </script>
 
     @include('footer')
     <script src="./assets/js/utils.js"></script>

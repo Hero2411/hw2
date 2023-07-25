@@ -31,11 +31,7 @@
 
     <div class="titoli">
         <h1>Latest Set</h1>
-        <p>Web programming refers to the creation
-            of websites and web applications using
-            various programming languages. Below
-            are some of the commonly used programming
-            languages in web development:</p>
+        <p>Qui trovi gli ultimi set scattati in ordine cronologico:</p>
     </div>
 
 
@@ -62,11 +58,7 @@
 
     <div class="titoli">
         <h1> Sezione foto random 16:9 </h1>
-        <p>Web programming refers to the creation
-            of websites and web applications using
-            various programming languages. Below
-            are some of the commonly used programming
-            languages in web development:</p>
+        <p>Qui trovi una selezione casuale delle mie foto:</p>
     </div>
 
     <section class="grid">
