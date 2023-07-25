@@ -6,7 +6,7 @@
 
     <div id="linkmenu">
         <a href="/"> Home </a>
-        <a href="/set"> Set </a>
+        <a href="/sets"> Set </a>
 
 
         @auth

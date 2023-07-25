@@ -16,8 +16,8 @@ Route::post('/logout', [UserControl::class, 'logout']);
 
 Route::view('/loginpage', 'loginpage');
 
-Route::get('/set', function(){
-    return view('set');
+Route::get('/sets', function(){
+    return view('sets');
 });
 Route::get('/account', function(){
     return view('account');

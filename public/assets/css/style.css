@@ -45,7 +45,7 @@ body {
     padding: 0 10px;
     padding-bottom: 10px;
     border-radius: 6px;
-    text-align: justify;
+    text-align: center;
 }
 
 .titoli h1 {
@@ -668,8 +668,9 @@ button:hover {
 }
 
 #selectedimg img{
-    width: 75%;
+    height: 75%;
     border-radius: 6px;
     margin-top: 25px;
+    border: 3px solid #191919;
     box-shadow: 8px 8px 5px 2px rgba(0, 0, 0, 0.2);
 }
